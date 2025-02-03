@@ -23,6 +23,7 @@ test('zopen new browser',async({ page })=> {
  //await page.pause()
 
   console.log(await page.title())
-  await expect(page).toHaveTitle("YouTube")
+  await expect(page.toHaveTitle("YouTube"))
+
   
    })
